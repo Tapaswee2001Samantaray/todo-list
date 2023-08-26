@@ -1,0 +1,99 @@
+.input {
+    display: flex;
+    width: 100%;
+    max-width: 900px;
+    position: relative;
+    align-items: center;
+    justify-content: center;
+    margin: 50px auto 0;
+}
+
+.input__box {
+    width: 80%;
+    border-radius: 15px;
+    padding: 15px 25px;
+    font-size: 20px;
+}
+
+.input__box:focus {
+    box-shadow: 0 0 10px 1000px rgba(0, 0, 0, 0.5);
+    outline: none;
+}
+
+.input__submit {
+    width: 90px;
+    height: 50px;
+    margin: 30px;
+    border-radius: 15px;
+    font-size: 20px;
+    transition: 0.2s all;
+    cursor: pointer;
+}
+
+.input__submit:active {
+    transform: scale(0.8);
+}
+
+.todos {
+    display: flex;
+    justify-content: space-evenly;
+    width: 90%;
+    flex-wrap: wrap;
+}
+
+.todos__single {
+    display: flex;
+    width: 100%;
+    padding: 20px;
+    margin-top: 15px;
+    border-radius: 10px;
+}
+
+.todos__single--text {
+    flex: 1;
+    padding: 5px;
+    border: none;
+    font-size: 20px;
+}
+
+.todos__single--text:focus {
+    outline: none;
+}
+
+.icon {
+    margin-left: 10px;
+    right: 10px;
+    cursor: pointer;
+    border-radius: 50%;
+    border: none;
+}
+
+.todos__hr {
+    margin: 10px 0;
+    border-top: 1px solid black;
+    width: 100%;
+}
+
+.todo_done {
+    background-color: aquamarine;
+}
+
+.todos__single--edit {
+    width: 90%;
+    height: 40px;
+    background-color: black;
+}
+
+@media (max-width: 700px) {
+    .input {
+        width: 95%
+    }
+
+    .todo {
+        width: 95%;
+    }
+
+    .todo__single {
+        width: 100%;
+    }
+}
